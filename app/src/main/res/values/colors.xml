@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <!--主题颜色-->
+    <color name="colorPrimary">#1f2326</color>
+    <color name="colorPrimaryDark">#101213</color>
+    <color name="colorAccent">#1b5e20</color>
+
+    <!--标题栏颜色-->
+    <color name="colorTitle">#FEFEFE</color>
+    <color name="colorSubTitle">#C6C6C6</color>
+    <color name="colorTitleBarBkg">@color/colorPrimary</color>
 </resources>

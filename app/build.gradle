@@ -15,6 +15,9 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    dataBinding {
+        enabled = true
+    }
     buildTypes {
         release {
             minifyEnabled false
@@ -22,6 +25,12 @@ android {
         }
     }
 }
+
+kapt {
+    generateStubs = true
+}
+
+apply plugin: 'replugin-host-gradle'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -31,5 +40,8 @@ dependencies {
     androidTestImplementation('com.android.support.test.espresso:espresso-core:3.0.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation "com.qihoo360.replugin:replugin-host-lib:$rePlugin_version"
+    implementation 'com.android.support:design:26.0.2'
+    kapt 'com.android.databinding:compiler:3.0.0-beta4'
 }
