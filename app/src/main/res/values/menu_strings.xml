@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="main_page">首页</string>
-    <string name="theme">主题</string>
-    <string name="feedback">反馈</string>
-    <string name="share">分享</string>
-    <string name="order">打赏</string>
-    <string name="about">关于</string>
+    <string name="main_page">首\t\t页</string>
+    <string name="theme">主\t\t题</string>
+    <string name="feedback">反\t\t馈</string>
+    <string name="share">分\t\t享</string>
+    <string name="order">打\t\t赏</string>
+    <string name="about">关\t\t于</string>
 </resources>

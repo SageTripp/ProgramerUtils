@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data class="PluginListFragmentDB">
+
+        <import type="android.view.View" />
+
+        <import type="java.util.ArrayList" />
+
+        <import type="com.st.programerutils.model.Model.Plugin" />
+
+        <variable
+            name="datas"
+            type="ArrayList&lt;Plugin&gt;" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/no_data"
+            android:gravity="center"
+            android:text="@string/has_no_data"
+            android:visibility="@{datas.size() &gt; 0 ? View.GONE : View.VISIBLE}" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_plugins"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="@{datas.size() &gt; 0 ? View.VISIBLE : View.GONE}" />
+    </RelativeLayout>
+
+
+</layout>
